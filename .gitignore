@@ -3,3 +3,4 @@ blobs/
 .dev_builds/
 dev_releases/
 config/dev.yml
+bosh-stemcell-3147-warden-boshlite-ubuntu-trusty-go_agent.tgz
