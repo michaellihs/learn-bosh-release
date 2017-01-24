@@ -55,3 +55,13 @@ Steps to deploy the Release
 
     >>> Hello, Maria from ...
     ```
+
+
+Debugging Deployment
+--------------------
+
+* If something goes wrong during deployment, use `bosh task <TASK NR> --debug` to see detailed logs
+
+* If you want to log into the VM provisioned by BOSH, use `bosh ssh app/0`
+
+* The log files for the app can be found in `/var/vcap/sys/log/app`
