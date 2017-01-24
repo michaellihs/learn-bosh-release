@@ -18,6 +18,7 @@ case $1 in
 
   start)
     mkdir -p $RUN_DIR $LOG_DIR
+    chown $RUNAS:$RUNAS /var/vcap/packages/simple_server/*
     chown -R $RUNAS:$RUNAS $RUN_DIR $LOG_DIR
 
     echo $$ > $PIDFILE
