@@ -1,0 +1,21 @@
+networks:
+- name: default
+  subnets:
+  - range: 10.244.0.0/28
+    reserved: [10.244.0.1]
+    static: [10.244.0.2,10.244.0.6,10.244.0.10]
+    cloud_properties:
+      name: random
+
+compilation:
+  workers: 2
+  network: default
+  cloud_properties: {}
+
+resource_pools:
+- name: default
+  stemcell:
+    name: bosh-warden-boshlite-ubuntu-trusty-go_agent
+    version: latest
+  network: default
+  cloud_properties: {}
