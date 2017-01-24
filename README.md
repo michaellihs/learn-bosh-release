@@ -1,7 +1,7 @@
 Learning BOSH with Cloud Config
 ===============================
 
-This repository extends the [Learning BOSH Tutorial](https://mariash.github.io/learn-bosh/) by using the manifest v2 schema with cloud config.
+This repository extends the [Learning BOSH Tutorial](https://mariash.github.io/learn-bosh/) by using the [manifest v2](http://bosh.io/docs/manifest-v2.html) schema with [cloud config](http://bosh.io/docs/cloud-config.html).
 
 
 Steps to deploy the Release
